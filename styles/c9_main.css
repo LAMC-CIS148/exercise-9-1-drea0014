@@ -229,6 +229,8 @@ footer p {
 @media only screen and (max-width: 648px) {
   header img {
     float: none;
+    flex-direction: column;
+
   }
 
   header {
@@ -272,8 +274,4 @@ footer p {
     font-size: 90%;
   }
 }
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-}
+
