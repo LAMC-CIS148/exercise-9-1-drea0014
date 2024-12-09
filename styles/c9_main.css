@@ -17,6 +17,10 @@ body {
   border: 3px solid #931420;
   background-color: #fffded;
 }
+main {
+    display: flex;
+    justify-content: space-between;
+}
 
 a:focus,
 a:hover {
@@ -61,9 +65,9 @@ header img {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* change to flex */
-  justify-content: space-between; /* space allocated evenly between flex items */
-  flex-basis: 100%; /* flex container occupies 100% of the page width */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #nav_menu ul li {
@@ -112,9 +116,8 @@ main {
 
 /* the styles for the section */
 section {
-  flex-basis: 70%; /* set flex-basis to 70% */
-  padding: 0 2.5% 20px 2.5%; /* 20 / 800 x 100 */
-  order: 2; /* set order to display after aside element */
+    flex: 1;
+    margin: 10px;
 }
 
 section h1 {
@@ -173,9 +176,8 @@ article img {
 
 /* the styles for the aside */
 aside {
-  flex-basis: 30%; /* set flex-basis to 30% */
-  padding: 0 0 20px 2.5%; /* 20 / 800 x 100 */
-  order: 1; /* set order to display before section element */
+    flex: 1;
+    margin: 10px;
 }
 
 aside h2 {
@@ -269,4 +271,9 @@ footer p {
   body {
     font-size: 90%;
   }
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 }
