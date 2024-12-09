@@ -114,7 +114,8 @@ main {
   display: flex; /* change to flex */
 }
 
-aside, section {
+/* the styles for the section */
+section {
     flex: 1;
     margin: 10px;
 }
@@ -173,6 +174,11 @@ article img {
   border: 1px solid black;
 }
 
+/* the styles for the aside */
+aside {
+    flex: 1;
+    margin: 10px;
+}
 
 aside h2 {
   color: #800000;
@@ -271,3 +277,4 @@ footer p {
         flex-direction: column;
     }
 }
+
