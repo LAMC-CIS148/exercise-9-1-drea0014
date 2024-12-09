@@ -116,7 +116,8 @@ main {
 
 /* the styles for the section */
 section {
-    flex: 70%;
+    flex-basis: 70%;
+    margin: 10px;
 }
 
 section h1 {
