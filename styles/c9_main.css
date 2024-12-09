@@ -116,7 +116,7 @@ main {
 
 /* the styles for the section */
 section {
-    flex-basis: 70%;
+    flex: 1;
     order: 2;
 }
 
