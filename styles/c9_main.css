@@ -65,9 +65,9 @@ header img {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: flex; 
+  justify-content: space-between; 
+  flex-basis: 100%
 }
 
 #nav_menu ul li {
@@ -116,8 +116,9 @@ main {
 
 /* the styles for the section */
 section {
-    flex: 1;
-    margin: 10px;
+  flex-basis: 70%; /* set flex-basis to 70% */
+  padding: 0 2.5% 20px 2.5%; /* 20 / 800 x 100 */
+  order: 2
 }
 
 section h1 {
@@ -176,8 +177,9 @@ article img {
 
 /* the styles for the aside */
 aside {
-    flex: 1;
-    margin: 10px;
+  flex-basis: 30%; /* set flex-basis to 30% */
+  padding: 0 0 20px 2.5%; /* 20 / 800 x 100 */
+  order: 1;
 }
 
 aside h2 {
@@ -272,8 +274,4 @@ footer p {
     font-size: 90%;
   }
 }
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-}
+
