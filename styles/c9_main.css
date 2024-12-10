@@ -272,4 +272,9 @@ footer p {
     font-size: 90%;
   }
 }
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
 
