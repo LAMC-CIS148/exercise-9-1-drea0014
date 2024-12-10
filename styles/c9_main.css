@@ -107,7 +107,8 @@ header img {
 
 /* the styles for the main content */
 main {
-  display: flex; /* change to flex */
+   display: flex;
+  justify-content: space-between;
 }
 
 /* the styles for the section */
