@@ -61,9 +61,9 @@ header img {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* change to flex */
-  justify-content: space-between; /* space allocated evenly between flex items */
-  flex-basis: 100%; /* flex container occupies 100% of the page width */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #nav_menu ul li {
